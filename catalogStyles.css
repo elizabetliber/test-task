@@ -1,0 +1,204 @@
+html, body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.imagesWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1080px;
+    height: 100%;
+    background-color: white;
+}
+
+.imageItem{
+    background-color: rgb(240, 240, 240);
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 150px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.20);
+}
+.imageTitle{
+    margin-top: 4px;
+    font-size: 1em;
+    font-weight: 700;
+    margin-left: 6px;
+}
+.imageDescription{
+  font-size: 0.9em;
+  margin-top: 7px;
+  margin-left: 6px;
+}
+
+.imageContainerOne{
+    display: flex;
+    flex-direction: row;
+}
+.imageContainerTwo{
+    display: flex;
+    flex-direction: row;
+}
+.elementsContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.elementText{
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-top: 6px;
+    margin-left: 6px;
+}
+.elementArrow{
+    font-size: 1.4em;
+    color: red;
+    margin-left: 3px;
+}
+.imageStyle{
+    width: 150px;
+    height: 150px;
+}
+
+
+
+@media screen and (max-width: 1080px) {
+    html, body {
+        margin: 0 auto;
+        height: 100%;
+        width: 100%; 
+}
+    .imageContainerOne {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 45%;
+    }
+    .imageContainerTwo{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 45%;
+        margin-top: 5%;
+    }
+    .imagesWrapper{
+        flex-direction: column;
+        width: 100%;
+    }
+    .imageItem{
+        background-color: rgb(240, 240, 240);
+        height: 100%;
+        box-shadow: 0 0 20px rgba(0,0,0,0.20);
+    }
+    .imageStyle{
+        width: 100%;
+    }
+    
+}
+
+@media (min-width: 500px) and (max-width: 1080px){
+    .imageItem{
+        margin-right: 5.5%;
+        margin-left: 5.5%;
+        width: 33%;
+    }
+    .imageStyle{
+        height: 75%;
+    }
+}
+@media (min-height: 1000px) and (max-width: 1080px){
+    .imageContainerOne {
+        height: 30%;
+    }
+    .imageContainerTwo{
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .imageContainerOne {
+        height: 45%;
+    }
+    .imageItem{
+        margin-right: 4.5%;
+        margin-left: 4.5%;
+        width: 36.5%;
+    }
+    .imageContainerTwo{
+        height: 45%;
+        margin-top: 10%;
+    }
+    .imagesWrapper{
+        height: 500px;
+    }
+    .imageStyle{
+        height: 65%;
+    }
+    .elementsContainer{
+        margin-top: 6px;
+    }
+    .elementText{
+        font-size: 0.6em;
+        font-weight: 700;
+        margin-left: 6px;
+    }
+    .elementArrow{
+        font-size: 1.1em;
+        color: red;
+        margin-left: 3px;
+    }
+    .imageTitle{
+        margin-top: 4px;
+        font-size: 1em;
+        font-weight: 700;
+        
+    }
+    .imageDescription{
+        font-size: 0.7em;
+        margin-top: 12px;
+        margin-left: 6px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .elementText{
+        font-size: 0.6em;
+        }
+    .elementArrow{
+        font-size: 1.1em;
+    }
+    .imageTitle{
+        font-size: 1em;
+        }
+    .imageDescription{
+        font-size: 0.7em;
+    }
+    .imageStyle{
+        height: 55%;
+    }
+}
+@media (min-width: 200px) and (max-width: 310px) {
+    .elementText{
+        font-size: 0.4em;
+        }
+    .elementArrow{
+        font-size: 0.9em;
+    }
+    .imageTitle{
+        font-size: 0.6em;
+        }
+    .imageDescription{
+        font-size: 0.5em;
+    }
+    .imageItem{
+        height: 75%;
+    }
+    .imageContainerTwo{
+        margin-top: 1px;
+    }
+}
